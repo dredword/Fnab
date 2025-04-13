@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фан игра по FNaF</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Шапка (фон), которая видна по бокам */
+    .header {
+      background-image: url('shap.jpg'); /* <-- твоя JPG фото */
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Полная высота экрана */
+      position: relative;
+    }
+
+    /* Контейнер для кнопки */
+    .content {
+      position: absolute; /* Чтобы разместить по центру */
+      top: 50%; /* Центрируем по вертикали */
+      left: 50%; /* Центрируем по горизонтали */
+      transform: translate(-50%, -50%); /* Реальное центрирование */
+      text-align: center;
+      width: 100%; /* Чтобы кнопка была по ширине */
+    }
+
+    /* Иконка игры */
+    .icon img {
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    /* Кнопка скачать */
+    .download a {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #FFD700;
+      color: #111;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .download a:hover {
+      background-color: #e6c200;
+    }
+
+    /* Серый фон под кнопкой и описание */
+    .description {
+      background-color: #333; /* Серый фон */
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .description h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .description p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    /* Техническое описание проекта */
+    .technical-description {
+      background-color: #222; /* Темный фон для технической информации */
+      color: white;
+      padding: 30px 20px;
+      margin-top: 20px; /* Отступ сверху */
+      text-align: center;
+    }
+
+    .technical-description h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .technical-description p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Фоновая шапка, видимая по бокам -->
+  <div class="header"></div>
+
+  <!-- Контент: иконка и кнопка -->
+  <div class="content">
+    <div class="icon">
+      <img src="fnab.png" alt="Иконка игры">
+    </div>
+    <div class="download">
+      <!-- Ссылка на APK с Яндекс Диска -->
+      <a href="https://t.me/dredwordGame" download>Скачать игру</a>
+    </div>
+  </div>
+
+  <!-- Серый фон с описанием игры -->
+  <div class="description">
+    <h2>Описание игры</h2>
+    <p>
+      Это фанатская игра по мотивам знаменитой серии "Five Nights at Freddy's". В этой игре вам предстоит пережить
+      ночи, исследуя таинственное место, полное загадок и угроз. Постарайтесь выжить, избегая
+      встреч с машинами для убийств и не попадаясь на их ловушки.
+    </p>
+    <p>
+      Пройдите все ночи, и прочувствуйте всю атмосферу ужаса.
+    </p>
+  </div>
+
+  <!-- Техническое описание проекта -->
+  <div class="technical-description">
+    <h2>ВАЖНО!</h2>
+    <p>
+      Этот проект создан на движке Unity и ещё находится на стадии разработки, в версии бета-тестирования, поэтому могут встречаться баги и незначительные проблемы с поведением врагов и прочие мелкие недочёты. Но скоро все эти неполадки будут устранены. Игра создана для платформы Android, и в ближайшее время будет переведена на стадию релиза.
+    </p>
+    <p>
+      Платформа: Android <br>
+      Язык программирования: C# <br>
+      Разработчик: Dredword
+    </p>
+  </div>
+
+</body>
+</html>
